@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <form name="frm">
+        <input  type="text" id="result" size="20" readonly="readonly" name="output">
+    <div id="topper">
+        <div>
+            <input type="button" name="btnOn" value="CE" class="button" onclick="showZero();">
+            <input type="button" name="btn00" value="00" class="button" id="off" onclick="showValue(btn00.value);">
+            <input type="button" name="btnMod" value="%" class="button" onclick="showValue(btnMod.value);">
+            <input type="button" name="btnBck" value="&#8592;" class="button" onclick="bckspace();"><br>
+        </div>
+        <div>
+        <input type="button" name="btn9" value="9" class="button" onclick="showValue(btn9.value);">
+        <input type="button" name="btn8" value="8" class="button" onclick="showValue(btn8.value);">
+        <input type="button" name="btn7" value="7" class="button" onclick="showValue(btn7.value);">
+        <input type="button" name="btnDiv" value="/" class="button" onclick="showValue(btnDiv.value);"><br>
+    </div>
+    <div>
+        <input type="button" name="btn6" value="6" class="button" onclick="showValue(btn6.value);">
+        <input type="button" name="btn5" value="5" class="button" onclick="showValue(btn5.value);">
+        <input type="button" name="btn4" value="4" class="button" onclick="showValue(btn4.value);">
+        <input type="button" name="btnMin" value="-" class="button" onclick="showValue(btnMin.value);"><br>
+    </div>
+    <div>    
+        <input type="button" name="btn3" value="3" class="button" onclick="showValue(btn3.value);">
+        <input type="button" name="btn2" value="2" class="button" onclick="showValue(btn2.value);">
+        <input type="button" name="btn1" value="1" class="button" onclick="showValue(btn1.value);">
+        <input type="button" name="btnMly" value="*" class="button" onclick="showValue(btnMly.value);"><br>
+    </div>
+    <div>
+        <input type="button" name="btnPnt" value="&#46;" class="button" onclick="showValue(btnPnt.value);">
+        <input type="button" name="btnZero" value="0" class="button" onclick="showValue(btnZero.value);">
+        <input type="button" name="btnEql" value="&#61;" class="button" onclick="output.value=eval(output.value);">
+        <input type="button" name="btnAdd" value="+" class="button" onclick="showValue(btnAdd.value);"><br>
+    </div>
+</div>
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
